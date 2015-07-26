@@ -33,5 +33,6 @@ window.addEventListener('scroll', function() {
 });
 
 setTimeout(function(){
-	window.scrollTo(0,0);
+	// window.scrollTo(0,0);
+	window.scrollTo(0,y: window.pageYOffset);	// trigger scroll event on page reload
 },10);
