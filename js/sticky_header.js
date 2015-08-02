@@ -1,13 +1,15 @@
 'use strict';
+querySelectorAll = document.querySelectorAll.bind(document);
+	
 
-var header = document.querySelectorAll('header')[0];
+var header = querySelectorAll('header')[0];
 var headerHeight = header.offsetHeight;
 
-var headerLink = document.querySelectorAll('header ul li a');
+var headerLink = querySelectorAll('header ul li a');
 var headerLinkHeight = headerLink[0].offsetHeight;
 
-var body = document.querySelectorAll('body')[0];
-window.addEventListener('scroll', function() {
+var body = querySelectorAll('body')[0];
+window.addEventListener('scroll', function () {
 
 	if (window.pageYOffset > headerHeight/2) {
 		body.classList.add('js-sticky_header');
